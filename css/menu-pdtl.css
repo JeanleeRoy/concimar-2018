@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css?family=Merriweather+Sans|Raleway|Roboto');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.scrollup{
+    position: fixed;
+    bottom: 5vh;
+    right: 2vw;
+    z-index: 1000;
+    text-decoration: none;
+    font-size: 40px;
+    color: #3671D9;
+    visibility: hidden;
+}
+header{
+    margin: auto;
+    z-index: 100;
+    height: inherit;
+    width: 100%;
+    padding: 5px;
+    background: rgba(0,0,0,.5);
+    transition: all ease .2s;
+    position: fixed;
+}
+header .scuare{
+    width: 100%;
+    display: flex;
+    height: inherit;
+    justify-content: center;
+}
+header .scuare img{
+    height: 40px;
+    border-radius: 50%;
+    transition: all ease .25s;
+}
+header .scuare h1{
+    font-family: 'Raleway', sans-serif;
+    font-weight: normal;
+    font-size: 16px;
+    margin: auto;
+}
+header .scuare h1 a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.fixed {
+    width: 100%;
+	transform: translateY(0px);
+    box-shadow: 0px 0px 1px #aaa;
+    background-color: rgba(255,255,255,.95);
+}
+.fixed .scuare h1 a{
+    color: #000;
+}
+
+
+/* ------ footer -------*/
+
+
+footer{
+    width: 100%;
+    overflow: hidden;
+    font-family: 'Roboto', sans-serif;
+    background-color: #212121;
+    color: #fff;
+}
+footer .inside{
+    width: 100%;
+    margin: 20px auto;
+    max-width: 1120px;
+    padding: 10px 10px 0px;
+}
+footer .inside .up{
+    width: 100%;
+}
+
+.inside .up .snip{
+    width: 100%;
+    padding: 5px;
+}
+.inside .up .list{
+    display: flex;
+    flex-wrap: wrap;
+}
+.inside .up .snip h4{
+    width: 100%;
+    font-size: 17px;
+    line-height: 25px;
+    margin: 25px 0px
+}
+.inside .up .snip p{
+    font-size: 14px;
+    color: #A4A4A4;
+    line-height: 21px;
+}
+.inside .up .snip ul{
+    width: 100%;
+    font-size: 15px;
+    list-style-position: inside;
+    line-height: 25px;
+}
+.inside .up .snip ul li{
+    margin-bottom: 13px;
+    list-style-image: url(../images/check.png);
+}
+.inside .up .snip ul li a:hover{
+    color: #A0B2D2;
+    transform: translateX(6px);
+}
+.inside .up .snip ul a{
+    display: inline-block;
+    max-width: 105px;
+    transform: translateX(2px);
+    color: #fff;
+    transition: all ease .2s;
+    text-decoration: none;
+}
+.inside .up .snip div{
+    width: 100%;
+    margin-bottom: 15px;
+}
+.inside .up .snip div span{
+    font-size: 18px;
+    color: #ADADAD;
+    margin-right: 10px;
+}
+.inside .up .snip div a{
+    text-decoration: none;
+    color: #A4A4A4;
+    font-size: 15px;
+    transition: all ease .2s;
+}
+.inside .up .snip div a:hover{
+    color: #fff;
+}
+.inside .up .snip .links{
+    font-size: 15px;
+}
+.inside .up .snip .links a{
+    display: inline-block;
+    color: #fff;
+    margin: 0px 10px;
+    background: #4B4B4B;
+    padding: 5px;
+    border-radius: 5px;
+    transition: all ease .2s;
+}
+.inside .up .snip .links a:hover{
+    background: #9F9F9F;
+}
+
+footer .sub{
+    width: 100%;
+    color: #656565;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    font-size: 15px;
+    min-height: 50px;
+    background-color: #0B0B0B;
+}
+footer .sub p{
+    text-align: center;
+}
+
+
+/* ------ responsive -------*/
+
+
+@media screen and (min-width:480px){
+    footer .inside{
+        width: 80%;
+    }
+    footer .sub p{
+        text-align: center;
+        line-height: 40px;
+    }
+}
+
+
+@media screen and (min-width: 640px){
+    .appear{
+        visibility: visible;
+        display: block;
+    }
+    header{
+        width: 100%;
+        position: fixed;
+        z-index: 100;
+    }
+    header a{
+        border-radius: 50%;
+    }
+    header .scuare h1{
+        font-weight: normal;
+        font-size: 20px;
+    }
+    header .scuare img{
+        height: 60px;
+    }
+    footer .inside{
+        width: 70%;
+    }
+}
+@media screen and (min-width: 720px){
+    header{
+    }
+    header .scuare{
+        margin: auto;
+        max-width: 1200px;
+    }
+    header .scuare h1{
+        font-weight: bold;
+    }
+    footer .inside{
+        width: 100%;
+    }
+    .inside .up{
+        display: flex;
+        justify-content: space-between;
+    }
+    .inside .up .snip{
+        width: 30%;
+    }
+    .inside .up .snip ul{
+        width: 50%;
+    }
+}

@@ -1,0 +1,127 @@
+article{
+    font-family: 'Roboto', sans-serif;
+    overflow: hidden;
+}
+article > p{
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    line-height: 23px;
+    margin-bottom: 5px;
+}
+article .partners{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5px;
+    justify-content: center;
+}
+article .partners .part{
+    width: 100%;
+    max-width: 300px;
+    overflow: hidden;
+    margin: 5px;
+    border-radius: 8px;
+    border: 1px solid #3671D9;
+    position: relative;
+}
+article .partners .part img{
+    width: 100%;
+}
+article .partners .part .placeh{
+    width: 100%;
+    padding: 10px;
+    background: #3671D9;
+    color: #fff;
+}
+.partners .part .placeh > p{
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    padding: 0px 10px;
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 5px;
+}
+.partners .part .placeh .plus{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.part .placeh .plus a{
+    border-radius: 50%;
+    font-size: 15px;
+    padding: 4px 8.4px;
+    width: 25px;
+    height: 25px;
+    display: inline-block;
+    text-decoration: none;
+    color: #3671D9;
+    font-weight: bolder;
+    background: #fff;
+}
+
+
+@media screen and (min-width: 648px){
+    main{
+        margin-bottom: 20px;
+    }
+    article > p, .partners .part .placeh > p{
+        font-size: 16px;
+        line-height: 28px;
+    }
+}
+
+@media screen and (min-width: 768px){
+    main{
+        margin-bottom: 35px;
+    }
+    article, article .partners{
+        max-width: 1100px;
+        padding: 10px;
+        margin-bottom: 15px;
+        margin: auto;
+    }
+    article .partners .part{
+        border: none;
+        box-shadow: 0px 0px 5px #EFEFEF;
+        transition: all ease .5s;
+    }
+    article .partners .part:hover{
+        box-shadow: 0px 0px 5px #A2A2A2;
+    }
+    article .partners .part .placeh{
+        position: absolute;
+        background: rgba(54,113,217,.7);
+        width: 50%;
+        right: 0;
+        height: 0%;
+        bottom: -15px;
+        transition: all ease .5s;
+        border-radius: 8px;
+    }
+    article .partners .part:hover .placeh{
+        width: 100%;
+        right: 0;
+        height: 100%;
+        bottom: 0px;
+    }
+    .partners .part .placeh > p, .part .placeh .plus a{
+        opacity: 0;
+        transition: all ease .3s;
+    }
+    .partners .part:hover .placeh > p, .part:hover .placeh .plus a{
+        opacity: 1;
+        margin-top: 30px;
+    }
+    .partners .part:hover .placeh > p{
+        margin-top: 60px;
+    }
+}
+
+
+
+
+
+
+
+

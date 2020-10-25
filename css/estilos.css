@@ -1,0 +1,604 @@
+@import url('https://fonts.googleapis.com/css?family=Merriweather+Sans|Raleway|Roboto');
+main{
+    width: 100%;
+    overflow: hidden;
+    font-family: 'Roboto', sans-serif;
+}
+h1, h2, h3 {
+    font-family: 'Raleway', sans-serif;
+}
+
+.scrollup{
+    position: fixed;
+    bottom: 5vh;
+    right: 2vw;
+    z-index: 1000;
+    text-decoration: none;
+    font-size: 40px;
+    color: #3671D9;
+    visibility: hidden;
+    display: none;
+}
+
+/* ------ inicio -------*/
+
+.inicio{
+    background-color: #EDEEEF;
+}
+.inicio, .principal {
+    width: 100%;
+    padding: 5px;
+    background-color: #f4f4f4;
+}
+.opac{
+    background-color: #EDEEEF;
+}
+.inicio .enc{
+    width: 100%;
+    margin-bottom: 10px;
+}
+.inicio h2, .principal h2{
+    color: #4D4D4D;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+    margin-top: 20px;
+}
+.inicio .enc p, .principal .enc p{
+    width: 100%;
+    color: #848787;
+    line-height: 20px;
+    font-size: 15px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+.inicio .line{
+    width: 30%;
+    margin: auto;
+    margin-top: 10px;
+    border: 1px solid #3671D9;
+    transition: all ease .2s;
+}
+.inicio .enc:hover .line{
+    width: 45%;
+}
+.inicio .cards{
+    width: 100%;
+    padding: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    justify-content: center;
+}
+.inicio .card{
+    width: 90%;
+    padding: 10px;
+    background: #fff;
+    border-radius: 1px;
+    margin-bottom: 15px;
+    box-shadow: 0px 0px 3px rgba(0,0,0,.3);
+}
+.inicio .card .picture{
+    width: 120px;
+    height: 120px;
+    margin: 15px auto 20px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+.card .picture img{
+    height: 100%;
+    width: inherit;
+}
+.cards .card .info{
+    width: 100%;
+}
+.card .info h3{
+    font-size: 15px;
+    font-weight: lighter;
+    text-align: center;
+    margin-bottom: 15px;
+}
+.card .info p{
+    font-size: 14px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+/* ------ nuevo | parallax | poster -------*/
+
+.nuevo{
+    width: 100%;
+    height: 250px;
+    background-image: url(../images/bg-nuevo.jpg);
+    background-size: cover;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.parallax{
+    background-attachment: fixed;
+    background-image: url(../images/bg-contact.jpg);
+}
+.poster{
+    background-image: url(../images/bg-poster.jpg);
+}
+.nuevo .text{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.4);
+    position: relative;
+}
+.nuevo .text > p, .nuevo .text .in{
+    width: 60%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+.nuevo .text .in a{
+    display: inline-block;
+    text-decoration: none;
+    font-size: 14px;
+    margin-top: 10px;
+    padding: 10px 20px;
+    border: 1px solid #fff;
+    border-radius: 25px;
+    color: #fff;
+    transition: all ease .2s;
+}
+.nuevo .text .in a:hover{
+    background: rgba(0,0,0,.45);
+}
+
+/* ------ image box -------*/
+
+.naps{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 5px;
+    padding-bottom: 28px;
+}
+.naps .nap{
+    position: relative;
+    width: 80%;
+    max-width: 235px;
+    background: #fff;
+    height: 340px;
+    overflow: hidden;
+    margin: 7px;
+    box-shadow: 0px 2px 3px #D1D1D1;
+}
+.naps .nap > img{
+    position: absolute;
+    top: 9px;
+    left: 6px;
+    z-index: 10;
+    width: 30px;
+}
+.naps .nap .visitar{
+    opacity: 0;
+    position: absolute;
+    z-index: 10;
+    top: 12px;
+    left: 40px;
+    color: #fff;
+    font-family: 'Raleway', sans-serif;
+    font-size: 13px;
+}
+.naps .nap:hover .visitar{
+    opacity: 1;
+    transition: all ease-out .3s;
+}
+.nap .imagen{
+    width: 100%;
+    height: 50%;
+    overflow: hidden;
+    position: relative;
+    transition: all ease .45s;
+}
+.nap .imagen img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    height: 150%;
+}
+.nap:hover .imagen{
+    height: 100%;
+}
+
+.nap > .info{
+    width: 100%;
+    height: 50%;
+    padding: 10px 15px;
+}
+.nap > .info h3{
+    font-size: 17px;
+    font-weight: lighter;
+    margin-bottom: 10px;
+    margin-top: 8px;
+}
+.nap > .info p{
+    font-size: 13.5px;
+    line-height: 20px;
+}
+.nap > .info span{
+    position: absolute;
+    right: 18px;
+    bottom: 22px;
+    display: inline;
+    transform: translateY(-18px);
+    box-shadow: -7.5px 0px 10px #fff;
+}
+.nap .view{
+    position: absolute;
+    bottom: 3px;
+    width: 100%;
+    height: 38px;
+    text-align: right;
+    color: #1B4BA1;
+    padding: 10px 15px;
+    font-size: 13px;
+}
+.nap span{
+    background: #fff;
+    transition: all ease .45s;
+}
+.nap:hover span{
+    visibility: hidden;
+    transform: translateY(150px);
+}
+
+.naps .nap .modal{
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    background: rgba(0,0,0,.65);
+    -webkit-transition: all ease .5s;
+}
+.naps .nap:hover .modal{
+    visibility: visible;
+    transition: all ease .5s;
+    opacity: 1;
+}
+.nap .modal .info{
+    color: #fff;
+    width: 83%;
+    margin: 63% auto auto;
+}
+.nap .modal .info h3, .nap .modal .info p { 
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    font-size: 15px;
+}
+.nap .modal .info p{
+    margin-top: 4px;
+    font-size: 11.5px;
+}
+
+
+/* ------ testimonios -------*/
+
+.testi{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5px;
+    padding-bottom: 25px;
+    justify-content: center;
+}
+.testi .cuad{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 400px;
+    padding: 5px;
+    justify-content: center;
+    margin: 0px 10px;
+    margin-bottom: 10px;
+}
+.cuad .icon-quotes-left{
+    text-align: center;
+    width: 100%;
+    color: #999999;
+    margin: 10px;
+}
+.cuad p{
+    text-align: center;
+    font-size: 15px;
+    color: #6D6D6D;
+    line-height: 25px;
+    margin: 10px 5px;
+}
+.cuad .image{
+    display: flex;
+    width: 100%;
+    padding: 5px;
+    margin: 10px;
+}
+.cuad .img{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: auto;
+    position: relative;
+}
+.cuad .img img{
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.cuad h4{
+    width: 100%;
+    text-align: center;
+    font-size: 16px;
+    font-weight: normal;
+}
+.cuad .charg{
+    text-align: center;
+    font-size: 13px;
+    color: #6D6D6D;
+    line-height: 18px;
+    margin: 0px 0px;
+}
+
+/* ------ footer -------*/
+
+footer{
+    width: 100%;
+    overflow: hidden;
+    font-family: 'Roboto', sans-serif;
+    background-color: #212121;
+    color: #fff;
+}
+footer .inside{
+    width: 100%;
+    margin: 20px auto;
+    max-width: 1120px;
+    padding: 10px 10px 0px;
+}
+footer .inside .up{
+    width: 100%;
+}
+
+.inside .up .snip{
+    width: 100%;
+    padding: 5px;
+}
+.inside .up .list{
+    display: flex;
+    flex-wrap: wrap;
+}
+.inside .up .snip h4{
+    width: 100%;
+    font-size: 17px;
+    line-height: 25px;
+    margin: 25px 0px
+}
+.inside .up .snip p{
+    font-size: 14px;
+    color: #A4A4A4;
+    line-height: 21px;
+}
+.inside .up .snip ul{
+    width: 100%;
+    font-size: 15px;
+    list-style-position: inside;
+    line-height: 25px;
+}
+.inside .up .snip ul li{
+    margin-bottom: 13px;
+    list-style-image: url(../images/check.png);
+}
+.inside .up .snip ul li a:hover{
+    color: #A0B2D2;
+    transform: translateX(6px);
+}
+.inside .up .snip ul a{
+    display: inline-block;
+    max-width: 105px;
+    transform: translateX(2px);
+    color: #fff;
+    transition: all ease .2s;
+    text-decoration: none;
+}
+.inside .up .snip div{
+    width: 100%;
+    margin-bottom: 15px;
+}
+.inside .up .snip div span{
+    font-size: 18px;
+    color: #ADADAD;
+    margin-right: 10px;
+}
+.inside .up .snip div a{
+    text-decoration: none;
+    color: #A4A4A4;
+    font-size: 15px;
+    transition: all ease .2s;
+}
+.inside .up .snip div a:hover{
+    color: #fff;
+}
+.inside .up .snip .links{
+    font-size: 15px;
+}
+.inside .up .snip .links a{
+    display: inline-block;
+    color: #fff;
+    margin: 0px 10px;
+    background: #4B4B4B;
+    padding: 5px;
+    border-radius: 5px;
+    transition: all ease .2s;
+}
+.inside .up .snip .links a:hover{
+    background: #9F9F9F;
+}
+
+footer .sub{
+    width: 100%;
+    color: #656565;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    font-size: 15px;
+    min-height: 50px;
+    background-color: #0B0B0B;
+}
+footer .sub p{
+    text-align: center;
+}
+
+/* ------ responsive -------*/
+
+@media screen and (min-width:480px){
+    footer .inside{
+        width: 80%;
+    }
+    footer .sub p{
+        text-align: center;
+        line-height: 40px;
+    }
+}
+
+@media screen and (min-width:640px){
+    .appear{
+        visibility: visible;
+        display: block;
+    }
+    .inicio .enc, .principal .enc{
+        width: 500px;
+        margin: auto;
+    }
+    .inicio .enc h2, .principal .enc h2{
+        font-size: 20px;
+        line-height: 28px;
+    }
+    .inicio .enc p, .principal .enc p{
+        font-size: 16px;
+    }
+    .cards{
+        padding-bottom: 30px;
+    }
+    .card .info h3{
+        font-size: 17px;
+    }
+    .card .info p{
+        font-size: 15px;
+        line-height: 21px;
+    }
+    .nuevo .text > p, .nuevo .text .in {
+        font-size: 19px;
+    }
+    footer .inside{
+        width: 70%;
+    }
+}
+@media screen and (min-width:768px){
+    .inicio .cards{
+        display: flex;
+        flex-wrap: nowrap;
+        max-width: 1200px;
+        margin: 20px auto 10px;
+    }
+    .inicio .cards .card{
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+    .cards .card .info{
+        max-width: 280px;
+        margin: auto;
+    }
+    .principal .enc h2{
+        margin-top: 20px;
+        margin-bottom: px;
+    }
+    .nuevo{
+        height: 350px;
+    }
+    .nuevo .text > p, .nuevo .text .in{
+        font-size: 22px;
+        line-height: 25px;
+    }
+    .naps{
+        padding-bottom: 32px;
+    }
+    .naps .nap{
+        margin: 10px;
+    }
+    footer .inside{
+        width: 100%;
+    }
+    .inside .up{
+        display: flex;
+        justify-content: space-between;
+    }
+    .inside .up .snip{
+        width: 30%;
+    }
+    .inside .up .snip ul{
+        width: 50%;
+    }
+}
+@media screen and (min-width:1120px){
+    .card .info p{
+        font-size: 16px;
+        line-height: 25px;
+    }
+    .nuevo .text p{
+        font-size: 26px;
+        line-height: 40px;
+    }
+    .principal .enc h2{
+        margin-top: 25px
+    }
+    .naps{
+        margin: auto;
+        max-width: 1220px;
+        padding-bottom: 40px;
+    }
+    .naps .nap{
+        margin: 11px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

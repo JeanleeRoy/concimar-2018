@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css?family=Merriweather+Sans|Raleway|Roboto');
+section{
+    width: 100%;
+    padding: 5px;
+    font-family: 'Roboto', sans-serif;
+}
+section .naps{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5px;
+    margin-bottom: 15px;
+}
+section .naps .nap{
+    width: 100%;
+    margin: 10px;
+}
+.naps .nap .picture{
+    padding: 5px;
+}
+.nap .picture .image{
+    margin: auto;
+    padding: 10px;
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    transition: all ease-out .2s;
+}
+.nap .picture img{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background: #3671D9;
+}
+.nap:hover .picture .image{
+    background: #82ACF5;
+}
+.nap .info{
+    width: 100%;
+}
+.nap .info h3{
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    font-size: 17px;
+    line-height: 23px;
+}
+.nap .info p, .nap .info a{
+    text-decoration: none;
+    text-align: center;
+    font-size: 15px;
+    line-height: 24px;
+}
+.nap .info a{
+    color: #3671D9;
+    text-decoration: none;
+    border-bottom: 1px dotted #3671D9;
+}
+.formulario{
+    margin: 20px 0px;
+}
+.formulario, form{
+    width: 100%;
+    padding: 5px;
+}
+form input, form textarea{
+    width: 100%;
+    border: 1px solid #E3E2E7;
+    height: 40px;
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 10px;
+    background: #F6F6F6;
+}
+form textarea{
+    min-width: 100%;
+    max-width: 100%;
+    min-height: 80px;
+    font-family: 'Roboto', sans-serif;
+}
+#boton{
+    background: #3671D9;
+    color: #fff;
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    transition: all ease-out .4s;
+    cursor: pointer;
+}
+#boton:hover{
+    background: #000;
+}
+iframe{
+    width: 100%;
+}
+
+@media screen and (min-width: 640px){
+    section{
+        max-width: 1120px;
+        margin: auto;
+    }
+    section .naps{
+        width: 100%;
+        display: flex;
+        flex-wrap:nowrap;
+    }
+}
+@media screen and (min-width: 768px){
+    .formulario{
+        margin: 40px 0px;
+    }
+    .formulario, form{
+        display: flex;
+    }
+    .left, .right{
+        width: 50%;
+        padding: 20px;
+    }
+    form textarea{
+        min-height: 135px;
+    }
+}
+@media screen and (min-width: 1200px){
+    .formulario{
+        padding: 5px 30px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
