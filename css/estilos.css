@@ -11,13 +11,13 @@ h1, h2, h3 {
 .scrollup{
     position: fixed;
     bottom: 5vh;
-    right: 2vw;
+    right: 1.8rem;
     z-index: 1000;
-    text-decoration: none;
-    font-size: 40px;
+    cursor: pointer;
+    font-size: 30px;
     color: #3671D9;
-    visibility: hidden;
-    display: none;
+    opacity: 0;
+    transition: opacity .2s ease-in-out;
 }
 
 /* ------ inicio -------*/
@@ -262,7 +262,7 @@ h1, h2, h3 {
     height: 100%;
     text-decoration: none;
     background: rgba(0,0,0,.65);
-    -webkit-transition: all ease .5s;
+    transition: all ease .5s;
 }
 .naps .nap:hover .modal{
     visibility: visible;
@@ -474,6 +474,9 @@ footer .sub p{
 }
 
 @media screen and (min-width:640px){
+    .scrollup {
+        font-size: 40px;
+    }
     .appear{
         visibility: visible;
         display: block;

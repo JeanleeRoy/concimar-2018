@@ -9,10 +9,11 @@
     bottom: 5vh;
     right: 2vw;
     z-index: 1000;
-    text-decoration: none;
+    cursor: pointer;
     font-size: 40px;
     color: #3671D9;
-    visibility: hidden;
+    opacity: 0;
+    transition: opacity .2s ease-in-out;
 }
 header{
     margin: auto;
@@ -206,8 +207,6 @@ footer .sub p{
     }
 }
 @media screen and (min-width: 720px){
-    header{
-    }
     header .scuare{
         margin: auto;
         max-width: 1200px;
